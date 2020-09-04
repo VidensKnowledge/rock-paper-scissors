@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<div id='app'>
+  <h1>Rock Paper Scissors</h1>
+    <h2>Which choice of hand would you like to play?</h2>
+    <h2>Computer has made a choice, your turn!</h2>
+    <!-- <select id="choiceSelect"> -->
+  <div id="uChoice">
+      <input id="rock" type="radio" name="rps" value="rock"><label for="rock">Rock</label>
+      <input id="paper" type="radio" name="rps" value="paper"><label for="paper">Paper</label>
+      <input id="scissors" type="radio" name="rps" value="scissors"><label for="scissors">Scissors</label>
+      <br />
+      <br />
+      <button  onclick="getUChoice()" >Shoot!</button>
+      <div id="uChoiceOut"></div>
+  </div>
+ 
+  <h1>Computer wins!/You win!</h1>
+
+  <div id="compChoice"><h2>The computer chooses ${hand}</h2></div>
+</div>  
+</body>
+</html>
