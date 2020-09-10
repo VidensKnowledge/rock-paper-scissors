@@ -18,16 +18,20 @@
       <input id="scissors" type="radio" name="rps" value="Scissors"><label for="scissors">Scissors</label>
       <br />
       <br />
-      <button  onclick="getUChoice()" >Shoot!</button>
+
+      
+      <button  onclick="getUChoice(), computerChoice(hands)" >Shoot!</button>
+      <br />
+      <br />
       <div id="uChoiceOut"></div>
       <br />
       <br />
       <div id="cChoiceOut"></div>
   </div>
  
-  <h1>Computer wins!/You win!</h1>
+ <div id="dispWinner"></div>
 
-  <div id="compChoice"><h2>The computer chooses ${hand}</h2></div>
+
 </div>  
 </body>
 </html>
